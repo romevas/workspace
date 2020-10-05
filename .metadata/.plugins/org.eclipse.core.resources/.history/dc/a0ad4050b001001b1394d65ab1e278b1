@@ -1,0 +1,25 @@
+package variaveis;
+
+import java.math.BigInteger;
+
+public class Variavel {
+
+	public static void main(String[] args) {
+
+		String nome = "";
+		int idade = 0;
+		double altura = 0.0;
+		
+		nome = "Rogerio Mendonca";
+		idade = 36;
+		altura = 1.78;
+		
+		System.out.println("Nome   " + nome);
+		System.out.println("Idade  " + idade);
+		System.out.println("Altura " + altura);
+		
+		
+	
+	}
+
+}

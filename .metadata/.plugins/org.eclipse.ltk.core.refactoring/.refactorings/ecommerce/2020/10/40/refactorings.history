@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Magica.java&apos; to &apos;universidade/src/br.com.universidade.tela&apos;&#x0D;&#x0A;- Original project: &apos;ecommerce&apos;&#x0D;&#x0A;- Destination element: &apos;universidade/src/br.com.universidade.tela&apos;&#x0D;&#x0A;- Original element: &apos;br.com.ecommerce.tela.Magica.java&apos;" description="Copy compilation unit" destination="=universidade/src&lt;br.com.universidade.tela" element1="/src&lt;br.com.ecommerce.tela{Magica.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1601667056713" units="1" version="1.0"/>
+</session>

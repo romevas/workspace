@@ -1,0 +1,20 @@
+package br.com.universidade.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.modelo.Professor;
+
+public class TesteProfessor {
+
+	public static void main(String[] args) {
+		Professor professor = new Professor();
+		professor.setId(Integer.parseInt(JOptionPane.showInputDialog("ID")));
+		professor.setNome(JOptionPane.showInputDialog("Nome"));
+		professor.setValorHora(Float.parseFloat(JOptionPane.showInputDialog("Valor Hora")));
+		professor.setFormacao(JOptionPane.showInputDialog("Formacao"));
+		
+		System.out.println(professor.getAll());
+		
+	}
+
+}

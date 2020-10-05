@@ -1,0 +1,45 @@
+package br.com.lojauati.modelo;
+
+public class Televisao {
+	private int canal;
+	private boolean status;
+	private int volume;
+
+	public void aumentarVolume()
+	{
+		if (status==true)
+		volume++;
+	}
+	public void diminuirVolume()
+	{
+		if (status==true && volume>0)
+			volume--;
+	}
+	public void mudarCanal(int numero)
+	{ 
+		if (status==true && canal!=numero)
+			canal = numero;
+	}
+	public void ligar()
+	{
+			status=true;
+	}
+	public void desligar()
+	{
+		if (status=true)
+			status=false;
+	}
+	public String exibirStatus()
+	{
+		return String.valueOf(status);
+	}
+	public String exibirTudo()
+	{ 
+		return 
+				"Status : " + String.valueOf(status) + "\n" +
+				"Canal  : " + canal + "\n" +
+				"Volume : " + volume;
+	}
+
+
+}

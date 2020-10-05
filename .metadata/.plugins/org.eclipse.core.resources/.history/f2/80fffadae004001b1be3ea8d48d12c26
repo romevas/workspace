@@ -1,0 +1,10 @@
+package br.com.universidade.modelo;
+
+public class Turma {
+private String nome;
+private String periodo;
+private String curso;
+private Aluno aluno;
+private Professor professor;
+
+}

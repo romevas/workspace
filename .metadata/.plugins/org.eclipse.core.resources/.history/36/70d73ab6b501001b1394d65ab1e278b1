@@ -1,0 +1,69 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Variavel {
+
+	public static void main(String[] args) {
+
+		String nome = "";
+		int idade = 0;
+		double altura = 0.0;
+		double peso = 0.0;
+		boolean fim = false;
+		
+		nome = JOptionPane.showInputDialog("Informe o Nome");
+		
+		fim = false;
+		while (!fim)
+		{
+			try
+			{
+				idade = Integer.parseInt(JOptionPane.showInputDialog("Informe a Idade"));
+				fim = true;
+			}
+			catch (Exception ex)
+			{
+				System.out.println("Informe uma idade valida !! (" + ex.getMessage() + ")");
+			}
+		}
+
+		fim = false;
+		while (!fim)
+		{
+			try
+			{
+				altura = Double.parseDouble(JOptionPane.showInputDialog("Informe a Altura"));
+				fim = true;
+			}
+			catch (Exception ex)
+			{
+				System.out.println("Informe uma altura valida !! (" + ex.getMessage() + ")");
+			}
+		}
+
+		fim = false;
+		while (!fim)
+		{
+			try
+			{
+				peso = Double.parseDouble(JOptionPane.showInputDialog("Informe o Peso"));
+				fim = true;
+			}
+			catch (Exception ex)
+			{
+				System.out.println("Informe um peso valido !! (" + ex.getMessage() + ")");
+			}
+		}
+		
+	
+		System.out.println("Nome  : " + nome);
+		System.out.println("Idade : " + idade);
+		System.out.println("Altura: " + altura);
+		System.out.println("Peso  : " + peso);
+		
+		
+	
+	}
+
+}

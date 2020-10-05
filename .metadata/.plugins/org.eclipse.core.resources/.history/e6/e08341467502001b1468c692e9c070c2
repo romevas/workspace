@@ -1,0 +1,17 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		String nome = JOptionPane.showInputDialog("Informe o nome do cliente").toUpperCase();
+		double valorInvestido = Double.parseDouble(JOptionPane.showInputDialog("Informe valor investido"));
+		short anosFidelidade = Short.parseShort(JOptionPane.showInputDialog("Informe anos de fidelidade"));
+		String regiao = JOptionPane.showInputDialog("Informe a região do cliente").toUpperCase();
+		
+		
+		
+	}
+
+}

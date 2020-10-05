@@ -1,0 +1,9 @@
+package br.com.universidade.implementacao;
+
+public class ImplementaFormacao {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package br.com.lojauati.teste;
+
+import br.com.lojauati.modelo.Formula1;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		
+		Formula1 carro = new Formula1();
+		
+		carro.preencherEscuderia("Ferrari");
+		carro.preencherValor((float)10000.00);
+		carro.preencherRpm(10000);
+		
+		System.out.println(carro.exibirEscuderia());
+		System.out.println(carro.exibirValor());
+		System.out.println(carro.exibirRpm());
+		
+	}
+
+}

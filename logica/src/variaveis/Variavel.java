@@ -1,0 +1,79 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Variavel {
+
+	public static void main(String[] args) {
+
+		String nome = "";
+		int idade = 0;
+		double altura = 0.0;
+		double peso = 0.0;
+		double imc = 0.0;
+		boolean fim = false;
+
+		while (!fim)
+		{
+			nome = JOptionPane.showInputDialog("Informe o Nome");
+			if (!nome.isEmpty())
+				fim = true;
+			else
+				System.out.println("Informe um nome !!");
+		}
+		
+		fim = false;
+		while (!fim)
+		{
+			try
+			{
+				idade = Integer.parseInt(JOptionPane.showInputDialog("Informe a Idade"));
+				fim = true;
+			}
+			catch (Exception ex)
+			{
+				System.out.println("Informe uma idade valida !! (" + ex.getMessage() + ")");
+			}
+		}
+
+		fim = false;
+		while (!fim)
+		{
+			try
+			{
+				altura = Double.parseDouble(JOptionPane.showInputDialog("Informe a Altura"));
+				fim = true;
+			}
+			catch (Exception ex)
+			{
+				System.out.println("Informe uma altura valida !! (" + ex.getMessage() + ")");
+			}
+		}
+
+		fim = false;
+		while (!fim)
+		{
+			try
+			{
+				peso = Double.parseDouble(JOptionPane.showInputDialog("Informe o Peso"));
+				fim = true;
+			}
+			catch (Exception ex)
+			{
+				System.out.println("Informe um peso valido !! (" + ex.getMessage() + ")");
+			}
+		}
+		
+		imc = peso / (altura * altura);
+	
+		System.out.println("Nome  : " + nome);
+		System.out.println("Idade : " + idade);
+		System.out.println("Altura: " + altura);
+		System.out.println("Peso  : " + peso);
+		System.out.println("IMC   : " + Math.round(imc));
+		
+		
+	
+	}
+
+}
