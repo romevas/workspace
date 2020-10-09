@@ -42,10 +42,21 @@ public class ArtistaController {
 		return ResponseEntity.ok(resposta);			
 	}
 	
-	@PostMapping("/nacionalidade")
-	public ResponseEntity<List<Artista>> logar(@RequestBody Artista objeto)
+	@PostMapping("/findnacionalidade")
+	public ResponseEntity<List<Artista>> findNacionalidade(@RequestBody Artista objeto)
 	{
 		List<Artista> logado = dao.findAllByNacionalidade(objeto.getNacionalidade());
+		
+		if (logado == null) {
+			return ResponseEntity.status(404).build();			
+		}
+		return ResponseEntity.ok(logado);			
+	}
+	
+	@GetMapping("/nacionalidade/{nac}")
+	public ResponseEntity<List<Artista>> getNacionalidade(@PathVariable String nac)
+	{
+		List<Artista> logado = dao.findAllByNacionalidade(nac);
 		
 		if (logado == null) {
 			return ResponseEntity.status(404).build();			

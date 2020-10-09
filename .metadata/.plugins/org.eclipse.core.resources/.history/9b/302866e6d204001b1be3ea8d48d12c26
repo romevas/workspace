@@ -1,9 +1,0 @@
-package br.com.ecommerce.modelo;
-
-public class PessoaFisica {
-
-	public String cpf;
-	public String rg;
-	public String nascimento;
-
-}
